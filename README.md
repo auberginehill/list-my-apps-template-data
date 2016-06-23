@@ -64,7 +64,7 @@ To open this code with an Android device, for instance:
 
 10. **Microsoft Excel** (Text Import Wizard) 
    - On the Data tab of the Ribbon bar, in the Get External Data group, click From Text. Then, in the Import Text File dialog box, double-click the Installed_Apps.txt file.
-   - Step 1 of 3: Set the original data type as Delimited, Start import at row 1 and the choose a character set in File origin, which matches the character set in Step 8 (In most cases, the File origin -setting can be left at its default). Click Next.
+   - Step 1 of 3: Set the original data type as Delimited, Start import at row 1 and the choose a character set in File origin, which matches the character set set in Step 8 (In most cases, the File origin -setting can be left at its default). Click Next.
    - Step 2 of 3. Select semi-colon under Delimiters and make sure all other options are NOT selected, and also that Text qualifier is set to " and click Next.
    - Step 3 of 3: The Column data format can be set individually for each column. The default General setting works fine for most of the fields, but at least the 'Version' column has to be set to Text in order to preserve the original data during the import. Click Finish.
    - Select where the imported cells are placed and click OK.
@@ -83,7 +83,7 @@ To open this code with an Android device, for instance:
 
       |  Parameter             |  Description                                                                        |
       |  -------------         |  -------------                                                                      |
-      |  `sort`                |  Sorting can be adjusted to one's liking by adjusting `sort Type,Name` with approppriate column header names (which are set in the `file_header.txt` -section).                                         |
+      |  `sort`                |  Sorting can be adjusted to one's liking by adjusting `sort Type,Name` with approppriate column header names (which are set in the [file_header.txt](file_header.txt) -section).                        |
       |  `-Delimiter`          |  Any single character can be used as a delimiter in the exported csv-file. For tab character as a delimiter, the two character `'t` -combo might work.                                                      |
       |  `-NoTypeInformation`  |  Without the the `NoTypeInformation` -parameter the first line of the .csv-file would contain `#TYPE` followed by the name of the type of the object, and that is not a desired effect here.                 |
       |  `-Encoding`           |  The default value is `ASCII`. The acceptable values for this parameter are: `Unicode`, `UTF7`, `UTF8`, `ASCII`, `UTF32`, `BigEndianUnicode`, `Default`, `OEM`                                         |
