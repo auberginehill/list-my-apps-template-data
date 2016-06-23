@@ -23,7 +23,7 @@
    |  [file_footer.txt](file_footer.txt)  |  "List footer, may be blank"                                |
    |  [all_in_one.txt](all_in_one.txt)    |  Contains all the above mentioned three parts in one file.  |
 
-- Please include one empty row after "File Header" and "Body" in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).
+- Please include one empty row after [file_header.txt](file_header.txt) and [body.txt](body.txt) in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).
 
 - The resulted .txt-file needs to be further processed in order to create a human readable file.
 
@@ -38,7 +38,7 @@ To open this code with an Android device, for instance:
 2. Type in a name for the template.
    ![Screenshot](https://github.com/auberginehill/list-my-apps-template-table/blob/master/list_my_apps_-_template_editor.png "Screenshot")
 
-3. Paste all the appropriate template data (the three sections as specified below) to 'List My Apps' and save the template.
+3. Paste all the appropriate template data (the three sections as specified below) to 'List My Apps'. Please include one empty row after [file_header.txt](file_header.txt) and [body.txt](body.txt) (so that the script will write each app on its own row instead of all apps in one row) and save the template.
 
    |  Filename                            |  Field in List My Apps' Template Editor                     |
    |  -------------                       |  -------------                                              |
@@ -185,4 +185,4 @@ Find a bug? Have a feature request? Here is how you can contribute to this List 
 
 |             |                                                             |
 |  --------   |  -------------                                              |
-|  **N.B.**   |  Please include one empty row after "File Header" and "Body" in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).  |
+|  **N.B.**   |  Please include one empty row after [file_header.txt](file_header.txt) and [body.txt](body.txt) in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).  |
