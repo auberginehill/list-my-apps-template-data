@@ -69,7 +69,7 @@
         <td></td>
         <td>
             <ul>
-                <blockquote>
+                <ol>
                     <table>
                         <tr>
                             <td><strong>Filename</strong></td>
@@ -92,7 +92,7 @@
                             <td>Contains all the above mentioned three parts in one file.</td>
                         </tr>
                     </table>
-                </blockquote>
+                </ol>
                 <li>Please include one empty row after "File Header" and "Body" in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).</li>
                 <li>The resulted .txt-file needs to be further processed in order to create a human readable file.</li>
             </ul>
@@ -118,14 +118,14 @@
                 </p>
                 <p>
                     <li>Type in a name for the template.<br><br>
-                       <blockquote>
+                       <ol>
                           <img class="screenshot" title="screenshot" alt="screenshot" height="70%" width="70%" align="absmiddle" src="https://raw.githubusercontent.com/auberginehill/list-my-apps-template-table/master/list_my_apps_-_template_editor.png">
-                       </blockquote>
+                       </ol>
                     </li>
                 </p>
                 <p>
                     <li>Paste all the appropriate template data (the three sections as specified below) to 'List My Apps'. Please include one empty row after "File Header" and "Body" (so that the script will write each app on its own row instead of all apps in one row) and save the template.
-                        <blockquote>
+                        <ol>
                             <table>
                                 <tr>
                                     <td><strong>Filename</strong></td>
@@ -148,7 +148,7 @@
                                     <td>Contains all the above mentioned three parts in one file.</td>
                                 </tr>
                             </table>
-                        </blockquote>
+                        </ol>
                     </li>
                 </p>
                 <p>
@@ -211,12 +211,12 @@
                     <li><strong>Windows PowerShell</strong>
                         <ul>
                             <li>After copying the .txt-file to, for instance, <code>C:\Temp\</code> -directory in Windows (Step 9) open Windows PowerShell. Type the script below and press [Enter] (to convert the .txt-file into a .csv-file with semi-colon as delimiter):
-                                <blockquote>
+                                <ol>
                                     <code>Import-Csv C:\Temp\Installed_Apps.txt -Delimiter ";" | sort Type,Name | Export-Csv C:\Temp\csvfile.csv -Delimiter ";" -NoTypeInformation -Encoding UTF8</code>
-                                </blockquote>
+                                </ol>
                             </li>
                             <li>Parameters:
-                                <blockquote>
+                                <ol>
                                     <table>
                                         <tr>
                                             <td><code>sort</code></td>
@@ -233,7 +233,7 @@
                                         <tr>
                                             <td><code>-Encoding</code></td>
                                             <td>The default value is <code>ASCII</code>. The acceptable values for this parameter are:
-                                                <blockquote>
+                                                <ol>
                                                     <table>
                                                         <tr>
                                                             <td><code>Unicode</code></td>
@@ -257,7 +257,7 @@
                                                             <td><code>Default</code></td>
                                                         </tr>                                      
                                                     </table>
-                                                </blockquote>
+                                                </ol>
                                             </td>
                                         </tr>
                                         <tr>
@@ -273,7 +273,7 @@
                                             <td>Prompts you for confirmation before running the cmdlet.</td>
                                         </tr>
                                     </table>
-                                </blockquote>
+                                </ol>
                             </li>
                             <li>Further info: <a href="https://technet.microsoft.com/en-us/library/hh849932.aspx">https://technet.microsoft.com/en-us/library/hh849932.aspx</a></li>                            
                         </ul>
@@ -285,7 +285,7 @@
                     <br>
                         <ul>
                             <li><strong>CSV to Excel</strong> (in Windows PowerShell)
-                                <blockquote>
+                                <ol>
                                     <table>
                                         <tr>
                                             <td><code>$xl = new-object -comobject excel.application</code></td>
@@ -309,7 +309,7 @@
                                             <td><code>$xl.Quit()</code></td>
                                         </tr>
                                     </table>
-                                </blockquote>
+                                </ol>
                                 <ul>
                                     <table>
                                         <tr>
@@ -328,7 +328,7 @@
                             </li>
                             <br>
                             <li><strong>Excel to CSV</strong> (in Windows PowerShell)
-                                <blockquote>
+                                <ol>
                                     <table>
                                         <tr>
                                             <td><code>$xlCSV = 6</code></td>
@@ -352,7 +352,7 @@
                                             <td><code>$Excel.quit()</code></td>
                                         </tr>
                                     </table>
-                                </blockquote>
+                                </ol>
                                 <ul>
                                     <table>
                                         <tr>
@@ -364,7 +364,7 @@
                             </li>
                             <br>                       
                             <li><strong>Export-XLXS.ps1</strong> (in Windows PowerShell)
-                                <blockquote>
+                                <ol>
                                     <table>
                                         <tr>
                                             <td>First:</td>                                            
@@ -385,7 +385,7 @@
                                             <td><code>Get-Process | select Name,Id,Handles | Export-XLXS C:\Temp\report.xlsx</code></td>
                                         </tr>
                                     </table>
-                                </blockquote>
+                                </ol>
                                 <ul>
                                     <table>
                                         <tr>
@@ -397,7 +397,7 @@
                             </li>
                             <br>    
                             <li><strong>ConvertCSV-ToExcel.ps1</strong> (in Windows PowerShell)
-                                <blockquote>
+                                <ol>
                                     <table>
                                         <tr>
                                             <td>First:</td>                                            
@@ -418,7 +418,7 @@
                                             <td><code>ConvertCSV-ToExcel -inputfile 'csvfile.csv' -output 'Excelfile.xlsx'</code></td>
                                         </tr>
                                     </table>
-                                </blockquote>
+                                </ol>
                                 <ul>
                                     <table>
                                         <tr>
