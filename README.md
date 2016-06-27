@@ -1,188 +1,525 @@
 ## List My Apps Template - Data
 
+<table>
+   <tr>
+        <td><strong>OS:</strong></td>
+        <td>Android</td>
+   </tr>
+   <tr>
+        <td><strong>Type:</strong></td>
+        <td>A template for an Android app called '<a href="https://play.google.com/store/apps/details?id=de.onyxbits.listmyapps">List My Apps</a>'</td>
+   </tr>
+   <tr>
+        <td><strong>Language:</strong></td>
+        <td>General (with custom variables) and optionally Windows PowerShell</td>
+   </tr>
+   <tr>
+        <td><strong>Description:</th>
+        <td>This template (when run in an Android app called 'List My Apps') creates a list of the apps installed on an Android device in a semi-colon delimited .txt-file. The resulted .txt-file can be imported into Microsoft Excel (as described in the Tutorial Step 10 below) or imported to LibreOffice Calc via Windows Notepad (Tutorial Step 11) or processed directly in Windows PowerShell to convert it to a CSV-file (Tutorial Step 12). The goal is to have a .xlsx or .ods -file as an end product (which itself can be converted to PDF...).</td>
+   </tr>
+   <tr>
+        <td><strong>Homepage:</strong></td>
+        <td><a href="https://github.com/auberginehill/list-my-apps-template-data">https://github.com/auberginehill/list-my-apps-template-data</a></td>
+   </tr>
+   <tr>
+        <td><strong>Version:</strong></td>
+        <td>1.1</td>
+   </tr>
+   <tr>
+        <td><strong>Sources:</strong></td>
+        <td>
+            <table>
+                <tr>
+                    <td>Emojis:</td>
+                    <td><a href="https://api.github.com/emojis">https://api.github.com/emojis</a></td>
+                </tr>
+                <tr>
+                    <td>Descriptions of the variables:</td>
+                    <td><a href="http://www.onyxbits.de/faq-page/22#t22n48">http://www.onyxbits.de/faq-page/22#t22n48</a></td>
+                </tr>
+            </table>
+        </td>
+   </tr>
+   <tr>
+        <td><strong>Download:</strong></td>
+        <td>For instance <a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/all_in_one.txt">all_in_one.txt</a> or the same file in <a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/file_header.txt">three</a> <a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/body.txt">separate</a> <a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/file_footer.txt">parts</a>.</td>
+   </tr>
+</table>
 
 
-|                    |                                                                                |
-|  -------------     |  -------------                                                                 |
-|  **OS:**           |  Android, Windows                                                              |
-|  **Type:**         |  A template for an Android app called '[List My Apps](https://play.google.com/store/apps/details?id=de.onyxbits.listmyapps)'                          |
-|  **Language:**     |  General (with custom variables) and optionally Windows PowerShell             |
-|  **Description:**  |  This template (when run in an Android app called 'List My Apps') creates a list of the apps installed on an Android device in a semi-colon delimited txt-file. The resulted .txt-file can be imported into Microsoft Excel (as described in the Tutorial Step 10 below) or imported to LibreOffice Calc via Windows Notepad (Tutorial Step 11) or processed directly in Windows PowerShell to convert it to a csv-file (Tutorial Step 12). The goal is to have a .xlsx or .ods file as an end product (which itself can be converted to PDF...).                                                |
-|  **Homepage:**     |	<https://github.com/auberginehill/list-my-apps-template-data>                 |
-|  **Source:**       |  Descriptions of the variables: <http://www.onyxbits.de/faq-page/22#t22n48>    |
+
+#### Screenshot
+
+<img class="screenshot" title="screenshot" alt="screenshot" height="100%" width="100%" align="absmiddle" src="https://github.com/auberginehill/list-my-apps-template-data/blob/master/example.png">
 
 
-#### Remarks 
 
-- List My Apps custom templates consist of three fields ("List header", "Item format" and "List footer"). The template code in this project is divided into three parts, which correspond the fields found in List My Apps' Template Editor as described below: 
+#### Remarks
 
-   |  Filename                            |  Field in List My Apps' Template Editor                     |
-   |  -------------                       |  -------------                                              |
-   |  [file_header.txt](file_header.txt)  |  "List header, may be blank"                                |
-   |  [body.txt](body.txt)                |  "Item format, may not be blank"                            |
-   |  [file_footer.txt](file_footer.txt)  |  "List footer, may be blank"                                |
-   |  [all_in_one.txt](all_in_one.txt)    |  Contains all the above mentioned three parts in one file.  |
-
-- Please include one empty row after [file_header.txt](file_header.txt) and [body.txt](body.txt) in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).
-
-- The resulted .txt-file needs to be further processed in order to create a human readable file.
+<table>
+   <tr>
+        <th><img class="emoji" title="remarks" alt="remarks" height="28" width="28" align="absmiddle" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png"></th>
+        <td>
+            <ul>
+                <li>List My Apps custom templates consist of three fields ("List header", "Item format" and "List footer"). The template code in this project is divided into three parts, which correspond the fields found in List My Apps' Template Editor as described below:</li>
+            </ul>
+        </td>
+   </tr>
+   <tr>
+        <td></td>
+        <td>
+            <ul>
+                <blockquote>
+                    <table>
+                        <tr>
+                            <td><strong>Filename</strong></td>
+                            <td><strong>Field in List My Apps' Template Editor</strong></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/file_header.txt">file_header.txt</a></td>
+                            <td>"List header, may be blank"</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/body.txt">body.txt</a></td>
+                            <td>"Item format, may not be blank"</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/file_footer.txt">file_footer.txt</a></td>
+                            <td>"List footer, may be blank"</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/all_in_one.txt">all_in_one.txt</a></td>
+                            <td>Contains all the above mentioned three parts in one file.</td>
+                        </tr>
+                    </table>
+                </blockquote>
+                <li>Please include one empty row after "File Header" and "Body" in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).</li>
+                <li>The resulted .txt-file needs to be further processed in order to create a human readable file.</li>
+            </ul>
+        </td>
+   </tr>
+</table>
 
 
 
 #### Tutorial
 
-To open this code with an Android device, for instance:
+<table>
+   <tr>
+        <th><img class="emoji" title="tutorial" alt="tutorial" height="28" width="28" align="absmiddle" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d6.png"></th>
+        <td>To open this code with an Android device, for instance:</td>
+   </tr>
+   <tr>
+        <td></td>
+        <td>
+            <ol>
+                <p>
+                    <li>Create a new template in '<a href="https://play.google.com/store/apps/details?id=de.onyxbits.listmyapps">List My Apps</a>' -app's Template Editor by clicking Options (three dots) → Template Editor → Add. [<a href="http://groovyandroid.com/wp-content/uploads/2013/10/List-My-Apps-select-all.png">Screenshot</a>]</li>
+                </p>
+                <p>
+                    <li>Type in a name for the template.<br><br>
+                       <blockquote>
+                          <img class="screenshot" title="screenshot" alt="screenshot" height="70%" width="70%" align="absmiddle" src="https://raw.githubusercontent.com/auberginehill/list-my-apps-template-table/master/list_my_apps_-_template_editor.png">
+                       </blockquote>
+                    </li>
+                </p>
+                <p>
+                    <li>Paste all the appropriate template data (the three sections as specified below) to 'List My Apps'. Please include one empty row after "File Header" and "Body" (so that the script will write each app on its own row instead of all apps in one row) and save the template.
+                        <blockquote>
+                            <table>
+                                <tr>
+                                    <td><strong>Filename</strong></td>
+                                    <td><strong>Field in List My Apps' Template Editor</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/file_header.txt">file_header.txt</a></td>
+                                    <td>"List header, may be blank"</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/body.txt">body.txt</a></td>
+                                    <td>"Item format, may not be blank"</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/file_footer.txt">file_footer.txt</a></td>
+                                    <td>"List footer, may be blank"</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/auberginehill/list-my-apps-template-data/blob/master/all_in_one.txt">all_in_one.txt</a></td>
+                                    <td>Contains all the above mentioned three parts in one file.</td>
+                                </tr>
+                            </table>
+                        </blockquote>
+                    </li>
+                </p>
+                <p>
+                    <li>Go back to the 'List My Apps' -app's home screen and select the name that was created in Step 2 from the 'Copy/Share as:' -dropdown menu. Please also select the apps that you'd like to be included in the list. [<a href="http://groovyandroid.com/wp-content/uploads/2013/10/List-My-App-HTML-list.png">Screenshot</a>]</li>
+                </p>
+                <p>
+                    <li>'Run' the 'List My Apps' -app with the new template by copying the app data to Clipboard [Copy] (since direct sharing may not work, if a lot of applications has been installed).
+                        <ul>
+                            <li>There seems to be some kind of a limit, how much data the Android Clipboard can contain. With verbose templates ~200 apps might be the upper limit, but with a simple template, the Android Clipboard clearly is capable of containing considerably more app data.</li>
+                        </ul>
+                    </li>
+                </p>
+                <p>
+                    <li>Open a text editor, such as <a href="https://play.google.com/store/apps/details?id=com.aor.droidedit">DroidEdit Free</a>.</li>
+                </p>
+                <p>
+                    <li>Paste the app data (source code generated by 'List My Apps' in Step 5) from Clipboard to the text editor.
+                        <ul>
+                            <li>If nothing happens (no data is pasted to a text editor after a few seconds), try selecting fewer apps in 'List My Apps' and go back to Step 5.</li>
+                                <ul>
+                                    <li>Depending on the device some lagging may occur when trying to paste, say ~10000 lines of code.</li>
+                                </ul>
+                            <li>If "old data" gets pasted to a text editor (i.e. "the data that was in the Clipboard before List My Apps' 'Copy to Clipboard' -button was clicked"), try selecting fewer apps in 'List My Apps' and go back to Step 5.</li>
+                        </ul>
+                    </li>
+                </p>
+                <p>
+                    <li>Save the file as a .txt-file, for example as 'Installed_Apps.txt', for example in 'Home/Documents' folder (a filename without any spaces is recommended).</li>
+                </p>
+                <p>
+                    <li>Copy the .txt-file to, for instance, <code>C:\Temp\</code> -directory in Windows.</li>
+                </p>
+                <p>
+                    <li><strong>Microsoft Excel (Text Import Wizard)</strong>
+                        <ul>
+                            <li>On the Data tab of the Ribbon bar, in the Get External Data group, click From Text. Then, in the Import Text File dialog box, double-click the Installed_Apps.txt file.</li>
+                            <li>Step 1 of 3: Set the original data type as Delimited, Start import at row 1 and the choose a character set in File origin, which matches the character set in Step 8 (In most cases, the File origin -setting can be left at its default). Click Next.</li>
+                            <li>Step 2 of 3. Select semi-colon under Delimiters and make sure all other options are NOT selected, and also that Text qualifier is set to " and click Next.</li>
+                            <li>Step 3 of 3: The Column data format can be set individually for each column. The default General setting works fine for most of the fields, but at least the 'Version' column has to be set to Text in order to preserve the original data during the import. Click Finish.</li>
+                            <li>Select where the imported cells are placed and click OK.</li>
+                        </ul>
+                    </li>
+                </p>
+                <p>
+                    <li><strong>LibreOffice Calc Paste Special via Windows Notepad</strong>
+                        <ul>
+                            <li>After copying the .txt-file to, for instance, <code>C:\Temp\</code> -directory in Windows (Step 9) open the .txt-file in Windows Notepad, select all text (Ctrl + A) and copy the selection to Windows Clipboard (Ctrl + C).</li>
+                            <li>Open LibreOffice Calc and click Edit - Paste Special (Ctrl + Shift + V) and double-click Unformatted Text.</li>
+                                <ul>
+                                    <li>Paste Special can also be found as an icon in the toolbar or by right-clicking a cell.</li>
+                                </ul>
+                            <li>Set semi-colon as the Delimiter and make sure all other options are NOT selected, and also that Text qualifier is set to " and start import at row 1 and choose a character set, which matches the character set set in Step 8 (In most cases, the Character set -setting can be left at its default). Click OK.</li>
+                                <ul>
+                                    <li>In Excel this procedure can be initiated by clicking the text "Paste" below the paste icon in Home tab of the Ribbon bar and selecting Use Text Import Wizard.</li>
+                                </ul>
+                        </ul>
+                    </li>
+                </p>
+                <p>
+                    <li><strong>Windows PowerShell</strong>
+                        <ul>
+                            <li>After copying the .txt-file to, for instance, <code>C:\Temp\</code> -directory in Windows (Step 9) open Windows PowerShell. Type the script below and press [Enter] (to convert the .txt-file into a .csv-file with semi-colon as delimiter):
+                                <blockquote>
+                                    <code>Import-Csv C:\Temp\Installed_Apps.txt -Delimiter ";" | sort Type,Name | Export-Csv C:\Temp\csvfile.csv -Delimiter ";" -NoTypeInformation -Encoding UTF8</code>
+                                </blockquote>
+                            </li>
+                            <li>Parameters:
+                                <blockquote>
+                                    <table>
+                                        <tr>
+                                            <td><code>sort</code></td>
+                                            <td>Sorting can be adjusted to one's liking by adjusting "<code>sort Type,Name</code>" with approppriate column header names (which are set in the "File Header:" -section).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>-Delimiter</code></td>
+                                            <td>Any single character can be used as a delimiter in the exported CSV-file. For tab character as a delimiter, the two character <code>'t</code> -combo might work.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>-NoTypeInformation</code></td>
+                                            <td>Without the the <code>NoTypeInformation</code>-parameter the first line of the CSV-file would contain <code>#TYPE</code> followed by the name of the type of the object, and that is not a desired effect here.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>-Encoding</code></td>
+                                            <td>The default value is <code>ASCII</code>. The acceptable values for this parameter are:
+                                                <blockquote>
+                                                    <table>
+                                                        <tr>
+                                                            <td><code>Unicode</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><code>UTF7</code></td>
+                                                        </tr>     
+                                                        <tr>
+                                                            <td><code>UTF8</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><code>ASCII</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><code>UTF32</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><code>BigEndianUnicode</code></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><code>Default</code></td>
+                                                        </tr>                                      
+                                                    </table>
+                                                </blockquote>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>-Force</code></td>
+                                            <td>If any error messages are detected and you know your're right, use the <code>Force</code>.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>-NoClobber</code></td>
+                                            <td>Halts the procedure, if overwriting (replacing the contents) of an existing file is about to happen. By default, if a file exists in the specified path, <code>Export-Csv</code> overwrites the file without warning.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>-Confirm</code></td>
+                                            <td>Prompts you for confirmation before running the cmdlet.</td>
+                                        </tr>
+                                    </table>
+                                </blockquote>
+                            </li>
+                            <li>Further info: <a href="https://technet.microsoft.com/en-us/library/hh849932.aspx">https://technet.microsoft.com/en-us/library/hh849932.aspx</a></li>                            
+                        </ul>
+                    </li>
+                </p>
+                <p>
+                    <li>Conversion from CSV to .xlsx or .ods should be pretty straightforward with Office apps, such as Microsoft Excel or LibreOffice. A couple of extra Windows PowerShell scripts below:
+                    <br>
+                    <br>
+                        <ul>
+                            <li><strong>CSV to Excel</strong> (in Windows PowerShell)
+                                <blockquote>
+                                    <table>
+                                        <tr>
+                                            <td><code>$xl = new-object -comobject excel.application</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$xl.visible = $False</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Workbook = $xl.workbooks.open("C:\Temp\csvfile.csv")</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Worksheets = $Workbooks.worksheets</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Workbook.SaveAs("C:\Temp\Excelfile.xlsx",1)</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Workbook.Saved = $True</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$xl.Quit()</code></td>
+                                        </tr>
+                                    </table>
+                                </blockquote>
+                                <ul>
+                                    <table>
+                                        <tr>
+                                            <td>Notes:</td>
+                                            <td>In some instances the data in the 'Version' column is deprecated during the conversion.</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">Source:</td>
+                                            <td><a href="https://social.technet.microsoft.com/Forums/windowsserver/en-US/370ee470-f2cd-4f30-a167-b106dd51d47a/">Powershell convert csv to xlsx</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://learn-powershell.net/2010/09/04/converting-csv-file-or-files-into-an-excel-workbook/">Converting CSV file or files into an Excel workbook</a></td>
+                                        </tr>
+                                    </table>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><strong>Excel to CSV</strong> (in Windows PowerShell)
+                                <blockquote>
+                                    <table>
+                                        <tr>
+                                            <td><code>$xlCSV = 6</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Excel = New-Object -Com Excel.Application</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Excel.visible = $False</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Excel.displayalerts=$False</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$WorkBook = $Excel.Workbooks.Open("C:\Temp\Excelfile.xlsx")</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Workbook.SaveAs("C:\Temp\process.csv",$xlCSV)</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$Excel.quit()</code></td>
+                                        </tr>
+                                    </table>
+                                </blockquote>
+                                <ul>
+                                    <table>
+                                        <tr>
+                                            <td>Source:</td>
+                                            <td><a href="https://learn-powershell.net/2010/09/04/converting-csv-file-or-files-into-an-excel-workbook/">Converting CSV file or files into an Excel workbook</a></td>
+                                        </tr>
+                                    </table>
+                                </ul>
+                            </li>
+                            <br>                       
+                            <li><strong>Export-XLXS.ps1</strong> (in Windows PowerShell)
+                                <blockquote>
+                                    <table>
+                                        <tr>
+                                            <td>First:</td>                                            
+                                            <td><code>. .\Export-XLXS.ps1</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Then:</td>
+                                            <td><code>Get-Command -CommandType Function -Name Export-XLXS</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>That gave:</td>
+                                            <td><code>CommandType Name Version Source</code><br>
+                                                <code>----------- ---- ------- ------</code><br>
+                                                <code>Function Export-XLXS</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Then:</td>
+                                            <td><code>Get-Process | select Name,Id,Handles | Export-XLXS C:\Temp\report.xlsx</code></td>
+                                        </tr>
+                                    </table>
+                                </blockquote>
+                                <ul>
+                                    <table>
+                                        <tr>
+                                            <td>Source:</td>
+                                            <td><a href="https://gallery.technet.microsoft.com/office/Export-XLSX-PowerShell-f2f0c035">Export-XLSX PowerShell generate real Excel XLSX files without Excel and COM</a></td>
+                                        </tr>
+                                    </table>
+                                </ul>
+                            </li>
+                            <br>    
+                            <li><strong>ConvertCSV-ToExcel.ps1</strong> (in Windows PowerShell)
+                                <blockquote>
+                                    <table>
+                                        <tr>
+                                            <td>First:</td>                                            
+                                            <td><code>. .\ConvertCSV-ToExcel.ps1</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Then:</td>
+                                            <td><code>Get-Command -CommandType Function -Name ConvertCSV-ToExcel</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>That gave:</td>
+                                            <td><code>CommandType Name Version Source</code><br>
+                                                <code>----------- ---- ------- ------</code><br>
+                                                <code>Function ConvertCSV-ToExcel</code></td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Then:</td>
+                                            <td><code>ConvertCSV-ToExcel -inputfile 'csvfile.csv' -output 'Excelfile.xlsx'</code></td>
+                                        </tr>
+                                    </table>
+                                </blockquote>
+                                <ul>
+                                    <table>
+                                        <tr>
+                                            <td>Source:</td>
+                                            <td><a href="https://gallery.technet.microsoft.com/office/7c56c444-2476-4625-b1d9-821f30280e44">Convert CSV/s to Excel</a></td>
+                                        </tr>
+                                    </table>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </p>
+            </ol>
+        </td>
+   </tr>
+</table>
 
-1. Create a new template in [List My Apps](https://play.google.com/store/apps/details?id=de.onyxbits.listmyapps)' -app's Template Editor by clicking Options (three dots) &rarr; Template Editor &rarr; Add. [[Screenshot](http://groovyandroid.com/wp-content/uploads/2013/10/List-My-Apps-select-all.png)]
 
-2. Type in a name for the template.
-   ![Screenshot](https://github.com/auberginehill/list-my-apps-template-table/blob/master/list_my_apps_-_template_editor.png "Screenshot")
 
-3. Paste all the appropriate template data (the three sections as specified below) to 'List My Apps'. Please include one empty row after [file_header.txt](file_header.txt) and [body.txt](body.txt) (so that the script will write each app on its own row instead of all apps in one row) and save the template.
-
-   |  Filename                            |  Field in List My Apps' Template Editor                     |
-   |  -------------                       |  -------------                                              |
-   |  [file_header.txt](file_header.txt)  |  "List header, may be blank"                                |
-   |  [body.txt](body.txt)                |  "Item format, may not be blank"                            |
-   |  [file_footer.txt](file_footer.txt)  |  "List footer, may be blank"                                |
-   |  [all_in_one.txt](all_in_one.txt)    |  Contains all the above mentioned three parts in one file.  |
-
-4. Go back to the 'List My Apps' -app's home screen and select the name that was created in Step 2 from the 'Copy/Share as:' -dropdown menu. Please also select the apps that you'd like to be included in the list. [[Screenshot](http://groovyandroid.com/wp-content/uploads/2013/10/List-My-App-HTML-list.png)]
-
-5. 'Run' the 'List My Apps' -app with the new template by copying the app data to Clipboard \[Copy\] (since direct sharing may not work, if a lot of applications has been installed).
-   - There seems to be some kind of a limit, how much data the Android Clipboard can contain. With verbose templates ~200 apps might be the upper limit, but with a simple template, the Android Clipboard clearly is capable of containing considerably more app data.
-
-6. Open a text editor, such as [DroidEdit Free](https://play.google.com/store/apps/details?id=com.aor.droidedit).
-
-7. Paste the app data (source code generated by 'List My Apps' in Step 5) from Clipboard to the text editor.
-   - If nothing happens (no data is copied to a text editor), try selecting fewer apps in 'List My Apps' and go back to Step 5.
-   - If "old data" gets copied to a text editor (i.e. "the data that was in the Clipboard before List My Apps' 'Copy to Clipboard' -button was clicked"), try selecting fewer apps in 'List My Apps' and go back to Step 5.
-
-8. Save the file as a .txt-file, for example as 'Installed_Apps.txt', for example in 'Home/Documents' folder (a filename without any spaces is recommended).
-
-9. Copy the .txt-file to, for instance, C:\Temp\ -directory in Windows.
-
-10. **Microsoft Excel** (Text Import Wizard) 
-   - On the Data tab of the Ribbon bar, in the Get External Data group, click From Text. Then, in the Import Text File dialog box, double-click the Installed_Apps.txt file.
-   - Step 1 of 3: Set the original data type as Delimited, Start import at row 1 and the choose a character set in File origin, which matches the character set set in Step 8 (In most cases, the File origin -setting can be left at its default). Click Next.
-   - Step 2 of 3. Select semi-colon under Delimiters and make sure all other options are NOT selected, and also that Text qualifier is set to " and click Next.
-   - Step 3 of 3: The Column data format can be set individually for each column. The default General setting works fine for most of the fields, but at least the 'Version' column has to be set to Text in order to preserve the original data during the import. Click Finish.
-   - Select where the imported cells are placed and click OK.
-
-11. **LibreOffice Calc** Paste Special via Windows Notepad
-   - After copying the .txt-file to, for instance, C:\Temp\ -directory in Windows (Step 9) open the .txt-file in Windows Notepad, select all text (Ctrl + A) and copy the selection to Windows Clipboard (Ctrl + C).
-   - Open LibreOffice Calc and click Edit - Paste Special (Ctrl + Shift + V) and double-click Unformatted Text.
-      - Paste Special can also be found as an icon in the toolbar or by right-clicking a cell.
-   - Set semi-colon as the Delimiter and make sure all other options are NOT selected, and also that Text qualifier is set to " and start import at row 1 and choose a character set, which matches the character set set in Step 8 (In most cases, the Character set -setting can be left at its default). Click OK.
-      - In Excel this procedure can be initiated by clicking the text "Paste" below the paste icon in Home tab of the Ribbon bar and selecting Use Text Import Wizard.
-
-12. **Windows PowerShell**
-   - After copying the .txt-file to, for instance, C:\Temp\ -directory in Windows (Step 9) open Windows PowerShell. Type the script below and press \[Enter\] (to convert the .txt-file into a .csv-file with semi-colon as delimiter):
-
-      `Import-Csv C:\Temp\Installed_Apps.txt -Delimiter ";" | sort Type,Name | Export-Csv C:\Temp\csvfile.csv -Delimiter ";" -NoTypeInformation -Encoding UTF8`
-
-      |  Parameter             |  Description                                                                        |
-      |  -------------         |  -------------                                                                      |
-      |  `sort`                |  Sorting can be adjusted to one's liking by adjusting `sort Type,Name` with approppriate column header names (which are set in the [file_header.txt](file_header.txt) -section).                        |
-      |  `-Delimiter`          |  Any single character can be used as a delimiter in the exported csv-file. For tab character as a delimiter, the two character `'t` -combo might work.                                                      |
-      |  `-NoTypeInformation`  |  Without the the `NoTypeInformation` -parameter the first line of the .csv-file would contain `#TYPE` followed by the name of the type of the object, and that is not a desired effect here.                 |
-      |  `-Encoding`           |  The default value is `ASCII`. The acceptable values for this parameter are: `Unicode`, `UTF7`, `UTF8`, `ASCII`, `UTF32`, `BigEndianUnicode`, `Default`, `OEM`                                         |
-      |  `-Force`              |  If any error messages are detected and you know your're right, use the `Force`.    |
-      |  `-NoClobber`          |  Halts the procedure, if overwriting (replacing the contents) of an existing file is about to happen. By default, if a file exists in the specified path, `Export-CSV` overwrites the file without warning.  |
-      |  `-Confirm`            |  Prompts you for confirmation before running the cmdlet.                            |
-
-      Further info: <https://technet.microsoft.com/en-us/library/hh849932.aspx>
-
-13. Conversion from .csv to .xlsx or .ods should be pretty straightforward with Office apps, such as Microsoft Excel or LibreOffice. A couple of extra Windows PowerShell scripts below:
-
-   - **CSV to Excel (in Windows PowerShell)**
-   
-   |           |                                                                                                   |
-   |  -------  |  -------------                                                                                    |
-   |           |  `$xl = new-object -comobject excel.application`                                                  |
-   |           |  `$xl.visible = $False`                                                                           |
-   |           |  `$Workbook = $xl.workbooks.open("C:\Temp\csvfile.csv")`                                          |
-   |           |  `$Worksheets = $Workbooks.worksheets`                                                            |
-   |           |  `$Workbook.SaveAs("C:\Temp\Excelfile.xlsx",1)`                                                   |
-   |           |  `$Workbook.Saved = $True`                                                                        |
-   |           |  `$xl.Quit()`                                                                                     |
-   |  Notes:   |  In some instances the data in the 'Version' column is deprecated during the conversion.          |
-   |  Source:  |  [Powershell convert csv to xlsx](https://social.technet.microsoft.com/Forums/windowsserver/en-US/370ee470-f2cd-4f30-a167-b106dd51d47a/)    |
-   |           |  [Converting CSV file or files into an Excel workbook](https://learn-powershell.net/2010/09/04/converting-csv-file-or-files-into-an-excel-workbook/)         |
-   
-   
-
-   - **Excel to CSV (in Windows PowerShell)** 
-
-   |           |                                                                                                   |
-   |  -------  |  -------------                                                                                    |
-   |           |  `$xlCSV = 6`                                                                                     |
-   |           |  `$Excel = New-Object -Com Excel.Application`                                                     |
-   |           |  `$Excel.visible = $False`                                                                        |
-   |           |  `$Excel.displayalerts=$False`                                                                    |
-   |           |  `$WorkBook = $Excel.Workbooks.Open("C:\Temp\Excelfile.xlsx")`                                    |
-   |           |  `$Workbook.SaveAs("C:\Temp\process.csv",$xlCSV)`                                                 |
-   |           |  `$Excel.quit()`                                                                                  |
-   |  Source:  |  [Converting CSV file or files into an Excel workbook](https://learn-powershell.net/2010/09/04/converting-csv-file-or-files-into-an-excel-workbook/)         |
-   
-   
-   
-      - **Export-XLXS.ps1 (in Windows PowerShell)** 
-
-   |              |                                                                                                   |
-   |  ----------  |  -------------                                                                                    |
-   |  First:      |  `. .\Export-XLXS.ps1`                                                                            |
-   |  Then:       |  `Get-Command -CommandType Function -Name Export-XLXS`                                            |
-   |  That gave:  |  `CommandType Name Version Source`                                                                |
-   |              |  `———– —- ———-`                                                                                   |
-   |              |  `Function Export-XLXS`                                                                           |
-   |  Then:       |  `Get-Process | select Name,Id,Handles | Export-XLXS c:\Temp\Report.xlsx`                         |
-   |  Source:     |  [Export-XLSX PowerShell generate real Excel XLSX files without Excel and COM](https://gallery.technet.microsoft.com/office/Export-XLSX-PowerShell-f2f0c035)                                 | 
-   
-   
-   
-      - **ConvertCSV-ToExcel.ps1 (in Windows PowerShell)** 
-
-   |              |                                                                                                   |
-   |  ----------  |  -------------                                                                                    |
-   |  First:      |  `. .\Export-XLXS.ps1`                                                                            |
-   |  Then:       |  `Get-Command -CommandType Function -Name ConvertCSV-ToExcel`                                     |
-   |  That gave:  |  `CommandType Name Version Source`                                                                |
-   |              |  `———– —- ———-`                                                                                   |
-   |              |  `Function ConvertCSV-ToExcel`                                                                    |
-   |  Then:       |  `ConvertCSV-ToExcel -inputfile 'file.csv' -output 'report.xlsx'`                                 |
-   |  Source:     |  [Convert CSV/s to Excel](https://gallery.technet.microsoft.com/office/7c56c444-2476-4625-b1d9-821f30280e44)                          |
-   
-   
-   
 #### Contributing
-Find a bug? Have a feature request? Here is how you can contribute to this List My Apps Template -project: 
-- [Submit bugs](https://github.com/auberginehill/list-my-apps-template-data/issues) and by help us verify fixes.
-- Feature request can be submitted by [creating an Issue](https://github.com/auberginehill/list-my-apps-template-data/issues).
-- [Submit pull requests](https://github.com/auberginehill/list-my-apps-template-data/pulls) for bug fixes and features and discuss existing proposals.
+
+<p>Find a bug? Have a feature request? Here is how you can contribute to this project:</p>
+
+ <table>
+   <tr>
+      <th><img class="emoji" title="contributing" alt="contributing" height="28" width="28" align="absmiddle" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f33f.png"></th>
+      <td><strong>Bugs:</strong></td>
+      <td><a href="https://github.com/auberginehill/list-my-apps-template-data/issues">Submit bugs</a> and help us verify fixes.</td>
+   </tr> 
+   <tr>
+      <td rowspan="2"></td>
+      <td><strong>Feature Requests:</strong></td>
+      <td>Feature request can be submitted by <a href="https://github.com/auberginehill/list-my-apps-template-data/issues">creating an Issue</a>.</td>
+   </tr> 
+   <tr>
+      <td><strong>Edit Source Files:</strong></td>
+      <td><a href="https://github.com/auberginehill/list-my-apps-template-data/pulls">Submit pull requests</a> for bug fixes and features and discuss existing proposals.</td>
+   </tr>
+ </table>   
 
 
 
 #### www
 
-- [Template Homepage](https://github.com/auberginehill/list-my-apps-template-data)
-- [List My Apps](https://play.google.com/store/apps/details?id=de.onyxbits.listmyapps) (Google Play)
-- [List My Apps' homepage](http://www.onyxbits.de/listmyapps)
-- [List My Apps' application thread](http://forum.xda-developers.com/showthread.php?t=2460266) at xda-developers.com
-- [DroidEdit Free](https://play.google.com/store/apps/details?id=com.aor.droidedit) (free code editor)
+<table>
+   <tr>
+        <th><img class="emoji" title="www" alt="www" height="28" width="28" align="absmiddle" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f310.png"></th>
+        <td><a href="https://github.com/auberginehill/list-my-apps-template-data">Template Homepage</a></td>
+   </tr>
+   <tr>
+        <td rowspan="5"></td>
+        <td><a href="https://play.google.com/store/apps/details?id=de.onyxbits.listmyapps">List My Apps</a> (Google Play)</td>
+   </tr>
+   <tr>
+        <td><a href="http://www.onyxbits.de/listmyapps">List My Apps' homepage</a></td>
+   </tr>
+   <tr>
+        <td><a href="http://forum.xda-developers.com/showthread.php?t=2460266">List My Apps' application thread</a> at xda-developers.com</td>
+   </tr> 
+   <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.aor.droidedit">DroidEdit Free</a> (free code editor)</td>
+   </tr>
+   <tr>
+      <td><a href="https://text-compare.com/#">Text Compare</a></td>
+   </tr>
+</table>
 
-  
+
 
 #### Related scripts
 
-- [List My Apps Template - Table](https://github.com/auberginehill/list-my-apps-template-table)
-- [List My Apps Template - List](https://github.com/auberginehill/list-my-apps-template-list)
-- [List My Apps Template - Pro](https://github.com/auberginehill/list-my-apps-template-pro)
-- [List My Apps Template - XML plain](https://github.com/auberginehill/list-my-apps-template-xml-plain)
-- [List My Apps Template - XML style](https://github.com/auberginehill/list-my-apps-template-xml-style)
+ <table>
+   <tr>
+        <th><img class="emoji" title="www" alt="www" height="28" width="28" align="absmiddle" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0023-20e3.png"></th>
+        <td><a href="https://github.com/auberginehill/list-my-apps-template-table">List My Apps Template - Table</a></td>
+   </tr>
+   <tr>
+        <td rowspan="5"></td>
+        <td><a href="https://github.com/auberginehill/list-my-apps-template-list">List My Apps Template - List</a></td>
+   </tr>
+   <tr>
+        <td><a href="https://github.com/auberginehill/list-my-apps-template-pro">List My Apps Template - Pro</a></td>
+   </tr>
+   <tr>
+        <td><a href="https://github.com/auberginehill/list-my-apps-template-xml-plain">List My Apps Template - XML plain</a></td>
+   </tr>
+   <tr>
+        <td><a href="https://github.com/auberginehill/list-my-apps-template-xml-style">List My Apps Template - XML style</a></td>
+   </tr>
+   <tr>
+        <td><a href="https://github.com/auberginehill/list-my-apps-template-json">List My Apps Template - JSON</a></td>
+   </tr>
+</table>  
 
 
 
-|             |                                                             |
-|  --------   |  -------------                                              |
-|  **N.B.**   |  Please include one empty row after [file_header.txt](file_header.txt) and [body.txt](body.txt) in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).  |
+#### N.B.
+
+ <table>
+   <tr>
+        <th><img class="emoji" title="www" alt="www" height="28" width="28" align="absmiddle" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png"></th>
+        <td>Please include one empty row after "File Header" and "Body" in the List My Apps template (so that the script will write each app on its own row instead of all apps in one row).</td>
+   </tr>
+</table> 
