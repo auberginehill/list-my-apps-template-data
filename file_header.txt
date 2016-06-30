@@ -1,1 +1,1 @@
-Name;Type;Generated;Total;Comment;Data Directory;First Installed;Last Updated;Market ID;Market Link;Package Name;Target SDK;UID;Tags;Version;Version Code;www;Search (Google);Google Store;Search (DDG);List Created With;Template Source;Name_2
+Name;Type;Generated;Total;Comment;Data Directory;First Installed;Last Updated;Market ID;Market Link;Package Name;Target SDK;UID;Tags;Version;Version Code;www;Search (Google);Google Store;F-Droid;Search (DDG);List Created With;Template Source;Name_2
